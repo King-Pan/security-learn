@@ -8,7 +8,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>security-user</module>
-	</modules>
+        <module>security-user-role</module>
+        <module>security-email</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>security-learn</name>
