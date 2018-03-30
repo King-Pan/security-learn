@@ -10,6 +10,7 @@
 		<module>security-user</module>
         <module>security-user-role</module>
         <module>security-email</module>
+        <module>security-login</module>
     </modules>
 	<packaging>pom</packaging>
 
