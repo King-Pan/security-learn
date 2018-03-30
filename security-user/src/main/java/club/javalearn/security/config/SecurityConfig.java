@@ -36,9 +36,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+        //defaultSuccessUrl  登录成功默认跳转页
+        //loginPage("/login") 指定登录界面是/login
+        //.permitAll();登录用户都可以访问
         http.authorizeRequests()
                 .anyRequest().authenticated()
-                .and().formLogin().loginPage("/login").successForwardUrl("/").failureUrl("/login?error").permitAll().and()
+                .and().formLogin().loginPage("/login").defaultSuccessUrl("/").failureUrl("/login?error").permitAll().and()
                 .logout().permitAll();
     }
 
