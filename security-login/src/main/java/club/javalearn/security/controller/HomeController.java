@@ -20,7 +20,7 @@ public class HomeController {
         return "Welcome to Home page";
     }
 
-    https://www.cnblogs.com/softidea/p/7068149.html
+    //https://www.cnblogs.com/softidea/p/7068149.html
 
     @RequestMapping("/hello")
     public String hello(){
